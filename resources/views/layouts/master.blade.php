@@ -31,6 +31,10 @@
 	<!-- responsive -->
 	<link rel="stylesheet" href="{{ asset('frontend/css/responsive.css') }}">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<!-- Owl Carousel CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
 
 	@stack('style')
 
@@ -54,7 +58,7 @@
 						<!-- logo -->
 						<div class="site-logo">
 							<a href="{{ route('user.index') }}" >
-								<img src="{{ asset('tenunmulya.png') }}" alt="">
+								<img src="{{ asset('logo-batik.png') }}" alt="">
 							</a>
 						</div>
 						<!-- logo -->
@@ -65,9 +69,12 @@
 								<li class="{{ $type_menu === 'home' ? 'current-list-item' : '' }}"><a href="{{ route('user.index') }}">Home</a></li>
 								<li class="{{ $type_menu === 'about' ? 'current-list-item' : '' }}"><a href="{{ route('user.about') }}">About</a></li>
 								<li class="{{ $type_menu === 'catalog' ? 'current-list-item' : '' }}"><a href="{{ route('user.catalog') }}">Catalog</a></li>
-								<li class="{{ $type_menu === 'contact' ? 'current-list-item' : '' }}"><a href="{{ route('user.contact') }}">Contact</a></li>
-								<li class="{{ $type_menu === 'rating' ? 'current-list-item' : '' }}"><a href="{{ route('user.rating') }}">Rating</a></li>
-								<li>
+								<li class="{{ $type_menu === 'contact' ? 'current-list-item' : '' }}"><a href="{{ route('user.contact') }}">Product</a></li>
+								<li class="{{ $type_menu === 'rating' ? 'current-list-item' : '' }}"><a href="{{ route('user.rating') }}">Reward</a></li>
+								<li class="{{ $type_menu === 'rating' ? 'current-list-item' : '' }}"><a href="{{ route('user.rating') }}">Activity</a></li>
+								<li class="{{ $type_menu === 'rating' ? 'current-list-item' : '' }}"><a href="{{ route('user.rating') }}">Legality</a></li>
+								<li></li>
+								{{-- <li>
 									<div class="header-icons">
 										<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
 											@csrf
@@ -84,7 +91,7 @@
 												<a href="{{ route('auth.signin') }}">Sign in</a>
 										@endauth
 									</div>
-								</li>
+								</li> --}}
 							</ul>
 						</nav>
 						<div class="mobile-menu"></div>
@@ -202,6 +209,11 @@
 	<script src="{{ asset('frontend/js/sticker.js') }}"></script>
 	<!-- main js -->
 	<script src="{{ asset('frontend/js/main.js') }}"></script>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- Owl Carousel JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 
 </body>
 </html>

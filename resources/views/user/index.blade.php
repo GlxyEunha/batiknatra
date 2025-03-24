@@ -8,8 +8,8 @@
 				<div class="col-lg-9 offset-lg-2 text-center">
 					<div class="hero-text">
 						<div class="hero-text-tablecell">
-							<p class="subtitle">Batik Tenun Ikat</p>
-							<h1>Tenun Mulya</h1>
+							<p class="subtitle">Same Way, Different Taste</p>
+							<h1>Batik Natra</h1>
 							<div class="hero-btns">
 								<a href="{{ route('user.catalog') }}" class="boxed-btn">Product Collection</a>
 								<a href="{{ route('user.contact') }}" class="bordered-btn">Contact Us</a>
