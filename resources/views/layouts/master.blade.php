@@ -7,10 +7,10 @@
 	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
 
 	<!-- title -->
-	<title>Tenun Mulya &mdash; @yield('title')</title>
+	<title>Batik Natra</title>
 
 	<!-- favicon -->
-	<link rel="shortcut icon" type="image/png" href="#">
+	<link rel="shortcut icon" type="image/png" href="{{ asset('favicon.png') }}">
 	<!-- google font -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
@@ -34,6 +34,7 @@
 	<!-- Owl Carousel CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
 
 	@stack('style')
@@ -125,7 +126,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-6">
 					<div class="footer-box about-widget">
-						<h2 class="widget-title">About Tenun Mulya</h2>
+						<h2 class="widget-title">About Batik Natra</h2>
 						<p>Tenun Mulya hadir meramaikan industri tenun di tanah air. Dengan niat mulia melestarikan produk tradisional khas Kota Kediri. Kamu bisa menemukan banyak ragam corak tenun ikat unik dan cantik buatan Tenun Mulya, lho.</p>
 					</div>
 				</div>
@@ -133,9 +134,9 @@
 					<div class="footer-box get-in-touch">
 						<h2 class="widget-title">Address</h2>
 						<ul>
-							<li>Jl. Bandar Lor Gg. IX A No.15, Bandar Lor, Kec. Mojoroto, Kota Kediri, Jawa Timur 64114.</li>
-							<li>tenunmulya@gmail.com</li>
-							<li>+62 8810 2799 0757</li>
+							<li>Jasmine Park J2 no 11 RT 03 RW 34 Plamongan Indah, Batursari, Mranggen, Demak, Jawa Tengah </li>
+							<li>natrabatik@gmail.com</li>
+							<li>+62 8191 4492 355</li>
 						</ul>
 					</div>
 				</div>
@@ -146,8 +147,10 @@
 							<li><a href="{{ route('user.index') }}">Home</a></li>
 							<li><a href="{{ route('user.about') }}">About</a></li>
 							<li><a href="{{ route('user.catalog') }}">Catalog</a></li>
-							<li><a href="{{ route('user.contact') }}">Contact</a></li>
-							<li><a href="{{ route('user.rating') }}">Rating</a></li>
+							<li><a href="{{ route('user.contact') }}">Product</a></li>
+							<li><a href="{{ route('user.rating') }}">Reward</a></li>
+							<li><a href="{{ route('user.rating') }}">Activity</a></li>
+							<li><a href="{{ route('user.rating') }}">Legality</a></li>
 						</ul>
 					</div>
 				</div>
@@ -170,15 +173,15 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
-					<p>Copyrights &copy; 2024 - <a href="#">Kelompok 2</a>,  All Rights Reserved.
+					<p>Copyrights &copy; 2025 by Batik Natra,  All Rights Reserved.
 					</p>
 				</div>
 				<div class="col-lg-6 text-right col-md-12">
 					<div class="social-icons">
 						<ul>
-							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="https://www.facebook.com/yustika.mersifarma" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="https://www.tiktok.com/@batiknatra?_t=ZS-8uxjPj4mkMS&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+							<li><a href="https://www.instagram.com/natrabatik.id?igsh=bWJnY3RmcndrcXNr" target="_blank"><i class="fab fa-instagram"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -213,6 +216,48 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<!-- Owl Carousel JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $(".owl-carousel").owlCarousel({
+			loop: true,
+			margin: 20,
+			nav: true,
+			dots: true,
+			responsive: {
+			  0: {
+				items: 1
+			  },
+			  576: {
+				items: 2
+			  },
+			  768: {
+				items: 3
+			  },
+			  992: {
+				items: 4
+			  }
+			}
+		  });
+		});
+	  </script>
+	  <script>
+		$(document).ready(function(){
+		  $(".category-carousel").owlCarousel({
+			items: 4,
+			margin: 20,
+			nav: true,
+			dots: false,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			responsive: {
+			  0: { items: 1 },
+			  576: { items: 2 },
+			  768: { items: 3 },
+			  992: { items: 4 }
+			}
+		  });
+		});
+	  </script>			
 
 
 </body>
