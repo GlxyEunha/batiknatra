@@ -14,6 +14,21 @@ class RatingController extends Controller
         return view('user.rating', ['type_menu' => 'rating']);
     }
 
+    public function legality()
+    {
+        return view('user.legality', ['type_menu' => 'legality']);
+    }
+
+    public function product()
+    {
+        return view('user.product', ['type_menu' => 'product']);
+    }
+
+    public function reward()
+    {
+        return view('user.reward', ['type_menu' => 'reward']);
+    }
+
     public function store(Request $request)
     {
         $this->validate($request, [

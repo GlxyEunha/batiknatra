@@ -47,6 +47,10 @@ Route::get('/catalog/product/{id}', [App\Http\Controllers\User\CatalogController
 Route::get('/rating', [App\Http\Controllers\User\RatingController::class, 'index'])->name('user.rating');
 Route::post('/rating', [App\Http\Controllers\User\RatingController::class, 'store'])->name('user.rating.store');
 
+Route::get('/legality', [App\Http\Controllers\User\RatingController::class, 'legality'])->name('user.legality');
+Route::get('/product', [App\Http\Controllers\User\RatingController::class, 'product'])->name('user.product');
+Route::get('/reward', [App\Http\Controllers\User\RatingController::class, 'reward'])->name('user.reward');
+
 
 // Admin Dashboard
 Route::group(['middleware' => ['auth', 'admin']], function () {

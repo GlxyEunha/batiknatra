@@ -31,6 +31,6 @@ class CatalogController extends Controller
         $product = Product::where('slug', $slug)->first();
         $categories = Category::all();
 
-        return view('user.catalog.product', compact('categories', 'product'), ['type_menu' => 'catalog']);
+        return view('user.detail', compact('categories', 'product'), ['type_menu' => 'catalog']);
     }
 }

@@ -139,7 +139,7 @@
 	</div>
 	<!-- end features list section -->
 
-	<div class="product-section mt-150 mb-150">
+	{{-- <div class="product-section mt-150 mb-150">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
@@ -159,7 +159,7 @@
 			  </div>		  
 
 		</div>
-	</div>
+	</div> --}}
 
 	<div class="product-section mt-150 mb-150">
 		<div class="container">
@@ -188,10 +188,6 @@
 
 						<!-- Harga -->
 						<p class="text-dark fw-bold">IDR 1.093.000</p>
-
-						<a href="{{ route('user.catalog.product', $product->slug) }}" class="btn btn-maroon text-white mt-auto w-100 d-flex align-items-center justify-content-center">
-						  <i class="bi bi-cart-fill me-2"></i> VIEW PRODUCT
-						</a>
 					  </div>
 
 					@endif
