@@ -9,7 +9,7 @@
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="breadcrumb-text">
-						<p>Batik Natra</p>
+						<p>Same Way, Different Taste</p>
 						<h1>About Us</h1>
 					</div>
 				</div>
@@ -256,7 +256,7 @@
 		<div class="row justify-content-center mb-4">
 		<div class="col-md-4 col-lg-3 mb-4">
 			<div class="card h-100 shadow text-center">
-			<img src="https://randomuser.me/api/portraits/women/45.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Andi Pratama" style="width: 100px; height: 100px; object-fit: cover;">
+			<img src="https://i.ibb.co.com/sdmyf9ZZ/Whats-App-Image-2025-04-05-at-08-37-28.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Andi Pratama" style="width: 100px; height: 100px; object-fit: cover;">
 			<div class="card-body">
 				<h5 class="card-title">Yustika Yuliarti, S.Si</h5>
 				<p class="card-text text-muted">Founder dan Owner</p>
@@ -278,7 +278,7 @@
 		<div class="row justify-content-center">
 		<div class="col-md-4 col-lg-3 mb-4">
 			<div class="card h-100 shadow text-center">
-			<img src="https://randomuser.me/api/portraits/men/76.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Rizky Aditya" style="width: 100px; height: 100px; object-fit: cover;">
+			<img src="https://i.ibb.co.com/hRDJx68L/Whats-App-Image-2025-04-05-at-08-36-28.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Rizky Aditya" style="width: 100px; height: 100px; object-fit: cover;">
 			<div class="card-body">
 				<h5 class="card-title">Akhmad Cholif A.Y.</h5>
 				<p class="card-text text-muted">Marketing Officer, Video Editor, dan Graphics Designer</p>
@@ -296,7 +296,7 @@
 		</div>
 		<div class="col-md-4 col-lg-3 mb-4">
 			<div class="card h-100 shadow text-center">
-			<img src="https://randomuser.me/api/portraits/men/28.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Dimas Hidayat" style="width: 100px; height: 100px; object-fit: cover;">
+			<img src="https://i.ibb.co.com/Tx5Qg6P5/Whats-App-Image-2025-04-04-at-19-29-03.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Dimas Hidayat" style="width: 100px; height: 100px; object-fit: cover;">
 			<div class="card-body">
 				<h5 class="card-title">Agung</h5>
 				<p class="card-text text-muted">Production Team Coordinator</p>
