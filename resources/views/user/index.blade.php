@@ -73,6 +73,7 @@
 		background-color: #f28123;
 		color: white;
 	}
+
 </style>
     <!-- hero area -->
 	<div class="hero-area" style="background-image: url('frontend/img/bg.jpg'); background-size: cover; background-position: center; padding: 100px 0; text-align: center;">>
@@ -211,7 +212,7 @@
     	<div class="container">
         	<div class="row clearfix">
             	<!--Image Column-->
-            	<div class="image-column col-lg-6">
+            	<div class="image-column col-lg-6" data-aos="fade-right" data-aos-delay="300">
                 	<div class="image">
                     	{{-- <div class="price-box">
                         	<div class="inner-price">
@@ -221,7 +222,7 @@
                     </div>
                 </div>
                 <!--Content Column-->
-                <div class="content-column col-lg-6">
+                <div class="content-column col-lg-6" data-aos="fade-left" data-aos-delay="300">
 					<h3>Lestarikan Budaya!</h3>
                     <div class="text">Mulailah langkah pertamamu dalam mendukung UMKM lokal yang menjunjung tinggi keberlanjutan dan pelestarian budaya! Indonesia kaya akan warisan tradisional, salah satunya adalah batik—kain penuh makna yang tak lekang oleh waktu.
 						Batik Natra menghadirkan batik warna alam yang dibuat dari serat alami dan pewarna tumbuhan, mencerminkan harmoni antara alam dan budaya. Setiap helai batik kami bukan hanya indah, tapi juga membawa cerita dan nilai-nilai kearifan lokal.</div>
@@ -267,7 +268,7 @@
 	<section class="shop-banner">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
 					<h3>Tentukan Desainmu!!</h3>
 					<p>Butuh seragam kantor dengan nuansa batik yang elegan dan ramah lingkungan? Ingin tampil serasi dengan pasangan lewat batik couple warna alam? Atau mau tampil kompak satu geng dengan motif batik kembar yang eksklusif?
 					</p>
@@ -281,7 +282,7 @@
 						</p>
 					<a href="https://api.whatsapp.com/send/?phone=628112671949" class="cart-btn btn-lg">Admin</a>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
 					<img src="frontend/img/batiknatra6.jpg" alt="Image Description" height="400px" width="480px" class="img-fluid">
 				</div>
 			</div>
@@ -305,7 +306,7 @@
 
 			<div class="row">
 			<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-					<div class="single-latest-news">
+					<div class="single-latest-news" data-aos="fade-right" data-aos-delay="300">
 						<div class="latest-news-bg news-bg-4"></div></a>
 						<div class="news-text-box">
 							<h3><a href="https://betanews.id/2023/01/uniknya-batik-natra-kombinasikan-motif-khas-demak-dan-anatomi-tubuh.html">Uniknya Batik Natra, Kombinasikan Motif Khas Demak dan Anatomi Tubuh
@@ -319,7 +320,7 @@
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-					<div class="single-latest-news">
+					<div class="single-latest-news" data-aos="fade-up" data-aos-delay="300">
 						<div class="latest-news-bg news-bg-5"></div></a>
 						<div class="news-text-box">
 							<h3><a href="https://www.rmoljawatengah.id/agak-lain-fesyen-demak-makin-kreatif">Agak Lain, Fesyen Demak Makin Kreatif</a></h3>
@@ -332,7 +333,7 @@
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-					<div class="single-latest-news">
+					<div class="single-latest-news" data-aos="fade-left" data-aos-delay="300">
 						<div class="latest-news-bg news-bg-6"></div></a>
 						<div class="news-text-box">
 							<h3><a href="https://betanews.id/2023/01/salurkan-hobi-menggambarnya-yustika-kini-miliki-produksi-batik-natra-yang-peminatnya-hingga-mancanegara.html">Salurkan Hobi Menggambarnya, Yustika Kini Miliki Produksi Batik Natra yang Peminatnya Hingga Mancanegara</a></h3>

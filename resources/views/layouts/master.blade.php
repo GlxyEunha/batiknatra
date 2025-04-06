@@ -39,10 +39,6 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 	<!-- AOS CSS & JS -->
 	<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-	<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-
-
 
 	@stack('style')
 
@@ -226,6 +222,13 @@
 	<!-- Lightbox2 JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 	{{-- <script src="https://cdn.tailwindcss.com"></script> --}}
+	<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 2000, // durasi animasi dalam ms
+			once: true // animasi hanya dijalankan sekali saat muncul
+		});
+	</script>
 	<script>
 		$(document).ready(function(){
 		  $(".owl-carousel").owlCarousel({

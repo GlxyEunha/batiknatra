@@ -24,7 +24,7 @@
 			<div class="row align-items-center">
 				<!-- Deskripsi Batik Natra -->
 				<div class="col-lg-6">
-					<div class="featured-text" style="text-align: justify;">
+					<div class="featured-text" style="text-align: justify;" data-aos="fade-right" data-aos-delay="300">
 						<h2 class="pb-3">Deskripsi <span class="orange-text">Batik Natra</span></h2>
 						<h3>Natural Creative Batik</h3>
 						<p>
@@ -61,7 +61,7 @@
 				</div>
 
 				<!-- Gambar Logo Gabungan Besar di Tengah -->
-				<div class="col-lg-12 text-center">
+				<div class="col-lg-12 text-center" data-aos="slide-up" data-aos-delay="300">
 					<img src="/frontend/img/logo-full.png" alt="Logo Gabungan" style="max-width: 200px; height: auto;">
 				</div>
 			</div>
@@ -69,20 +69,20 @@
 			<!-- Logo B dan Logo N dengan Deskripsi di Bawahnya -->
 			<div class="row text-center">
 				<!-- Logo B di Kiri -->
-				<div class="col-md-6 mb-4">
+				<div class="col-md-6 mb-4" data-aos="fade-right" data-aos-delay="300">
 					<img src="/frontend/img/logo-b.png" alt="Logo Batik" style="max-width: 50px; height: auto;">
 					<p><strong>b</strong> = batik</p>
 				</div>
 
 				<!-- Logo N di Kanan -->
-				<div class="col-md-6 mb-4">
+				<div class="col-md-6 mb-4" data-aos="fade-left" data-aos-delay="300">
 					<img src="/frontend/img/logo-n.png" alt="Logo Natra" style="max-width: 50px; height: auto;">
 					<p><strong>n</strong> = natra</p>
 				</div>
 			</div>
 
 			<!-- Deskripsi Filosofi Logo -->
-			<div class="row">
+			<div class="row" data-aos="fade-right" data-aos-delay="300">
 				<div class="col-lg-12">
 					<div class="featured-text text-center" style="text-align: justify;">
 						<p>Batik Natra memiliki motif-motif kontemporer dengan pewarna alam perpaduan klasik dan modern</p>
@@ -96,7 +96,7 @@
 			<br>
 
 			<!-- Deskripsi Filosofi Logo -->
-			<div class="row">
+			<div class="row" data-aos="fade-right" data-aos-delay="300">
 				<div class="col-lg-12">
 					<div class="featured-text" style="text-align: justify;">
 						<p>Terinspirasi dari jalanan akar tumbuhan di hutan. Jalinan akar yang kuat dan tidak putus. Bentuk jalinan akar yang terus tersambung menggambarkan upaya yang tidak pernah putus, baik dalam memperbaiki diri, upaya memperjuangkan kesejahteraan, persaudaraan serta budaya bangsa terutama Batik karena <strong>Inspirasi Alam Memberikan Imajinasi Tanpa Batas</strong></p>
@@ -114,7 +114,7 @@
 
 
 	<!-- background section -->
-	<div class="background-polos">
+	<div class="background-polos" data-aos="flip-right" data-aos-delay="300">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -206,7 +206,7 @@
 
 			<div class="row">
 				<!-- Visi -->
-				<div class="col-md-6 text-center">
+				<div class="col-md-6 text-center" data-aos="fade-right" data-aos-delay="300">
 					<div class="vision-mission-box p-4">
 						<img src="https://i.ibb.co.com/kgFfd7WL/dollar-1951551.png" alt="Vision Icon" style="width: 100px; height: auto;">
 						<h3 class="pt-3">Visi</h3>
@@ -224,7 +224,7 @@
 				</div>
 
 				<!-- Misi -->
-				<div class="col-md-6 text-center">
+				<div class="col-md-6 text-center" data-aos="fade-left" data-aos-delay="300">
 					<div class="vision-mission-box p-4">
 						<img src="https://i.ibb.co.com/1GNWsHyn/target-1420039.png" alt="Mission Icon" style="width: 100px; height: auto;">
 						<h3 class="pt-3">Misi</h3>
@@ -254,7 +254,7 @@
 
 		<!-- Baris pertama (2 orang) -->
 		<div class="row justify-content-center mb-4">
-		<div class="col-md-4 col-lg-3 mb-4">
+		<div class="col-md-4 col-lg-3 mb-4" data-aos="fade-right" data-aos-delay="300">
 			<div class="card h-100 shadow text-center">
 			<img src="https://i.ibb.co.com/sdmyf9ZZ/Whats-App-Image-2025-04-05-at-08-37-28.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Andi Pratama" style="width: 100px; height: 100px; object-fit: cover;">
 			<div class="card-body">
@@ -263,7 +263,7 @@
 			</div>
 			</div>
 		</div>
-		<div class="col-md-4 col-lg-3 mb-4">
+		<div class="col-md-4 col-lg-3 mb-4" data-aos="fade-left" data-aos-delay="300">
 			<div class="card h-100 shadow text-center">
 			<img src="https://i.ibb.co.com/HDcMtRzT/Whats-App-Image-2025-04-05-at-16-10-59.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Sinta Lestari" style="width: 100px; height: 100px; object-fit: cover;">
 			<div class="card-body">
@@ -276,7 +276,7 @@
 
 		<!-- Baris kedua (3 orang) -->
 		<div class="row justify-content-center">
-		<div class="col-md-4 col-lg-3 mb-4">
+		<div class="col-md-4 col-lg-3 mb-4" data-aos="fade-right" data-aos-delay="300">
 			<div class="card h-100 shadow text-center">
 			<img src="https://i.ibb.co.com/hRDJx68L/Whats-App-Image-2025-04-05-at-08-36-28.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Rizky Aditya" style="width: 100px; height: 100px; object-fit: cover;">
 			<div class="card-body">
@@ -285,7 +285,7 @@
 			</div>
 			</div>
 		</div>
-		<div class="col-md-4 col-lg-3 mb-4">
+		<div class="col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
 			<div class="card h-100 shadow text-center">
 			<img src="https://i.ibb.co.com/TxHHbjmC/Whats-App-Image-2025-04-06-at-14-58-37.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Maya Putri" style="width: 100px; height: 100px; object-fit: cover;">
 			<div class="card-body">
@@ -294,7 +294,7 @@
 			</div>
 			</div>
 		</div>
-		<div class="col-md-4 col-lg-3 mb-4">
+		<div class="col-md-4 col-lg-3 mb-4" data-aos="fade-left" data-aos-delay="300">
 			<div class="card h-100 shadow text-center">
 			<img src="https://i.ibb.co.com/Tx5Qg6P5/Whats-App-Image-2025-04-04-at-19-29-03.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Dimas Hidayat" style="width: 100px; height: 100px; object-fit: cover;">
 			<div class="card-body">
