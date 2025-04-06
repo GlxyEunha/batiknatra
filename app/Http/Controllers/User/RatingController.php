@@ -29,6 +29,11 @@ class RatingController extends Controller
         return view('user.reward', ['type_menu' => 'reward']);
     }
 
+    public function activity()
+    {
+        return view('user.activity', ['type_menu' => 'activity']);
+    }
+
     public function store(Request $request)
     {
         $this->validate($request, [

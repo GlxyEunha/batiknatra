@@ -265,7 +265,7 @@
 		</div>
 		<div class="col-md-4 col-lg-3 mb-4">
 			<div class="card h-100 shadow text-center">
-			<img src="https://randomuser.me/api/portraits/men/32.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Sinta Lestari" style="width: 100px; height: 100px; object-fit: cover;">
+			<img src="https://i.ibb.co.com/HDcMtRzT/Whats-App-Image-2025-04-05-at-16-10-59.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Sinta Lestari" style="width: 100px; height: 100px; object-fit: cover;">
 			<div class="card-body">
 				<h5 class="card-title">Tri Sunanto</h5>
 				<p class="card-text text-muted">Co Founder dan Finance Manager</p>
@@ -287,7 +287,7 @@
 		</div>
 		<div class="col-md-4 col-lg-3 mb-4">
 			<div class="card h-100 shadow text-center">
-			<img src="https://randomuser.me/api/portraits/women/12.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Maya Putri" style="width: 100px; height: 100px; object-fit: cover;">
+			<img src="https://i.ibb.co.com/TxHHbjmC/Whats-App-Image-2025-04-06-at-14-58-37.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Maya Putri" style="width: 100px; height: 100px; object-fit: cover;">
 			<div class="card-body">
 				<h5 class="card-title">Indri Astuti</h5>
 				<p class="card-text text-muted">Secretary</p>

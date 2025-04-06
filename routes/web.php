@@ -43,6 +43,7 @@ Route::post('/contact', [App\Http\Controllers\User\ContactController::class, 'st
 Route::get('/catalog', [App\Http\Controllers\User\CatalogController::class, 'index'])->name('user.catalog');
 Route::get('/catalog/{id}', [App\Http\Controllers\User\CatalogController::class, 'showCategory'])->name('user.catalog.category');
 Route::get('/catalog/product/{id}', [App\Http\Controllers\User\CatalogController::class, 'showProduct'])->name('user.catalog.product');
+Route::get('/download-katalog', [App\Http\Controllers\User\CatalogController::class, 'download'])->name('katalog.download');
 
 Route::get('/rating', [App\Http\Controllers\User\RatingController::class, 'index'])->name('user.rating');
 Route::post('/rating', [App\Http\Controllers\User\RatingController::class, 'store'])->name('user.rating.store');
@@ -50,6 +51,8 @@ Route::post('/rating', [App\Http\Controllers\User\RatingController::class, 'stor
 Route::get('/legality', [App\Http\Controllers\User\RatingController::class, 'legality'])->name('user.legality');
 Route::get('/product', [App\Http\Controllers\User\RatingController::class, 'product'])->name('user.product');
 Route::get('/reward', [App\Http\Controllers\User\RatingController::class, 'reward'])->name('user.reward');
+Route::get('/activity', [App\Http\Controllers\User\RatingController::class, 'activity'])->name('user.activity');
+
 
 
 // Admin Dashboard

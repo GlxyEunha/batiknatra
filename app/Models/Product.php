@@ -16,10 +16,10 @@ class Product extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function getImageAttribute($image)
-    {
-        return asset('storage/products/' . $image);
-    }
+    // public function getImageAttribute($image)
+    // {
+    //     return asset($image);
+    // }
 
     public function getCreatedAtAttribute($date)
     {   

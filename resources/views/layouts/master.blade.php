@@ -79,7 +79,7 @@
 								<li class="{{ $type_menu === 'catalog' ? 'current-list-item' : '' }}"><a href="{{ route('user.catalog') }}">Catalog</a></li>
 								<li class="{{ $type_menu === 'product' ? 'current-list-item' : '' }}"><a href="{{ route('user.product') }}">Product</a></li>
 								<li class="{{ $type_menu === 'reward' ? 'current-list-item' : '' }}"><a href="{{ route('user.reward') }}">Reward</a></li>
-								<li class="{{ $type_menu === 'rating' ? 'current-list-item' : '' }}"><a href="{{ route('user.rating') }}">Activity</a></li>
+								<li class="{{ $type_menu === 'activity' ? 'current-list-item' : '' }}"><a href="{{ route('user.activity') }}">Activity</a></li>
 								<li class="{{ $type_menu === 'legality' ? 'current-list-item' : '' }}"><a href="{{ route('user.legality') }}">Legality</a></li>
 								<li></li>
 								{{-- <li>
@@ -134,7 +134,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="footer-box about-widget">
 						<h2 class="widget-title">About Batik Natra</h2>
-						<p>Tenun Mulya hadir meramaikan industri tenun di tanah air. Dengan niat mulia melestarikan produk tradisional khas Kota Kediri. Kamu bisa menemukan banyak ragam corak tenun ikat unik dan cantik buatan Tenun Mulya, lho.</p>
+						<p>Batik Natra adalah produsen batik warna alam yang menghadirkan keindahan kain tradisional dengan sentuhan modern yang elegan. Terinspirasi oleh kekayaan alam Indonesia, setiap helai batik kami dibuat dengan serat alami dan pewarna dari tumbuhan, menciptakan warna-warna yang lembut, eksklusif, dan ramah lingkungan.</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
@@ -155,18 +155,18 @@
 							<li><a href="{{ route('user.about') }}">About</a></li>
 							<li><a href="{{ route('user.catalog') }}">Catalog</a></li>
 							<li><a href="{{ route('user.contact') }}">Product</a></li>
-							<li><a href="{{ route('user.rating') }}">Reward</a></li>
-							<li><a href="{{ route('user.rating') }}">Activity</a></li>
-							<li><a href="{{ route('user.rating') }}">Legality</a></li>
+							<li><a href="{{ route('user.reward') }}">Reward</a></li>
+							<li><a href="{{ route('user.activity') }}">Activity</a></li>
+							<li><a href="{{ route('user.legality') }}">Legality</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="footer-box subscribe">
-						<h2 class="widget-title">Join us</h2>
-						<p>Join to our website to get the latest updates.</p>
-						<form action="{{ route('auth.signin') }}">
-							<button type="submit" style="width: 100%">Sign up</button>
+						<h2 class="widget-title">Get Our Free Catalog</h2>
+						<p>Unduh katalog Batik Natra dan temukan koleksi warna alam yang memikat.</p>
+						<form action="{{ route('katalog.download') }}">
+							<button type="submit" style="width: 100%">Unduh Katalog</button>
 						</form>
 					</div>
 				</div>

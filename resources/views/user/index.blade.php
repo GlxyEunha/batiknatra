@@ -64,13 +64,13 @@
   	}
 
 	.btn-outline-maroon {
-		border: 2px solid #800000;
-		color: #800000;
+		border: 2px solid #f28123;
+		color: #f28123;
 		transition: 0.3s ease;
 	}
 
 	.btn-outline-maroon:hover {
-		background-color: #800000;
+		background-color: #f28123;
 		color: white;
 	}
 </style>
@@ -85,7 +85,7 @@
 							<h1>Batik Natra</h1>
 							<div class="hero-btns">
 								<a href="{{ route('user.catalog') }}" class="boxed-btn">Product Collection</a>
-								<a href="{{ route('user.contact') }}" class="bordered-btn">Contact Us</a>
+								<a href="https://api.whatsapp.com/send/?phone=6281914492355" class="bordered-btn">Contact Us</a>
 							</div>
 						</div>
 					</div>
@@ -125,11 +125,11 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="list-box d-flex justify-content-start align-items-center">
 						<div class="list-icon">
-							<i class="fa-solid fa-store" style="color: #f28123;"></i>
+							<i class="fa-solid fa-shirt" style="color: #f28123;"></i>
 						</div>
 						<div class="content">
-							<h3>Support UMKM</h3>
-							<p>Shop now for better UMKM!</p>
+							<h3>Sustainable Fashion</h3>
+							<p>Look good, feel better, wear responsibly.</p>
 						</div>
 					</div>
 				</div>
@@ -173,29 +173,30 @@
 
 			<div class="owl-carousel owl-theme">
 				@foreach ($products as $product)
-					@if ($product->status == 'publish')
-					<div class="product-card p-3 border rounded shadow-sm position-relative">
+				  @if ($product->status == 'publish')
+					<a href="{{ route('user.catalog.product', $product->slug) }}" class="text-decoration-none text-dark">
+					  <div class="product-card p-3 border rounded shadow-sm position-relative">
 						<!-- Label NEW -->
 						<span class="badge bg-danger text-white position-absolute top-0 start-0 m-2">NEW</span>
 				  
 						<!-- Gambar Produk -->
-						<img src="{{ $product->image }}" alt="{{ $product->slug }}" class="img-fluid mb-3" style="max-height: 250px; object-fit: cover;">
+						<img src="{{ asset('hot/' . $product->image) }}" alt="{{ $product->slug }}" class="img-fluid mb-3" style="max-height: 250px; object-fit: cover;">
 				  
 						<!-- Nama Produk -->
-						<p class="text-muted small mb-1">EXCLUSIVE COLLECTION, KEMEJA SLIMFIT, MEN</p>
-						<h6 class="fw-bold mb-2">Kemeja Slimfit Batik Lengan Panjang</h6>
+						<p class="text-muted medium mb-1">{{ $product->category }}</p>
+						<h6 class="fw-bold mb-2">{{ $product->name }}</h6>
 				  
-
 						<!-- Harga -->
-						<p class="text-dark fw-bold">IDR 1.093.000</p>
+						<p class="text-dark fw-bold">{{ $product->price }}</p>
 					  </div>
-
-					@endif
+					</a>
+				  @endif
 				@endforeach
-			</div>
+			  </div>
+			  
 			<br>
 			<div class="text-center mt-4">
-				<a href="" class="btn btn-outline-maroon px-4 py-2">
+				<a href="{{ route('user.catalog') }}" class="btn btn-outline-maroon px-4 py-2">
 					View More Products
 				</a>
 			</div>
@@ -222,11 +223,11 @@
                 <!--Content Column-->
                 <div class="content-column col-lg-6">
 					<h3>Lestarikan Budaya!</h3>
-                    <div class="text">Mulai langkah pertamamu dalam mendukung UMKM lokal terbaik!
-						Indonesia memiliki kekayaan luar biasa, termasuk produk-produk lokal berkualitas tinggi yang dihasilkan oleh UMKM . Produk-produk ini tak kalah saing dengan produk impor, lho! Keputusan ada ditangan mu, Dengan membeli produk lokal, kita menghargai kerja keras dan kreativitas mereka.</div>
-                    <p>Mari bersama-sama kita cintai produk dalam negeri dan dukung UMKM lokal!
-						Bersama, kita bisa membangun negeri yang lebih kuat dan sejahtera!
-						#CintaProdukDalamNegeri #DukungUMKMLokal #BanggaBuatanIndonesia</p>
+                    <div class="text">Mulailah langkah pertamamu dalam mendukung UMKM lokal yang menjunjung tinggi keberlanjutan dan pelestarian budaya! Indonesia kaya akan warisan tradisional, salah satunya adalah batik—kain penuh makna yang tak lekang oleh waktu.
+						Batik Natra menghadirkan batik warna alam yang dibuat dari serat alami dan pewarna tumbuhan, mencerminkan harmoni antara alam dan budaya. Setiap helai batik kami bukan hanya indah, tapi juga membawa cerita dan nilai-nilai kearifan lokal.</div>
+                    <p>Keputusan ada di tanganmu. Dengan memilih produk Batik Natra, kamu turut menghargai kerja keras pengrajin lokal dan mendukung pelestarian budaya Indonesia.
+						Yuk, cintai produk dalam negeri dan jadilah bagian dari gerakan positif untuk bumi dan budaya kita!
+						#CintaBatikAlam #DukungUMKMLokal #BatikNatra #BanggaBuatanIndonesia</p>
                 	<a href="{{ route('user.catalog') }}" class="cart-btn mt-3">Lihat Katalog</a>
                 </div>
             </div>
@@ -268,9 +269,15 @@
 			<div class="row">
 				<div class="col-md-6">
 					<h3>Tentukan Desainmu!!</h3>
-					<p>Kantor mu butuh seragam batik ?
-						Pengen Couple Tenun dengan pasangan ?
-						Pengen punya tenun kembar 1 tongkrongan ? <br>Tenun Mulya Siap menerima pesanan custom mu, tunggu apa lagi cepat hubungi admin untuk lebih lanjut!
+					<p>Butuh seragam kantor dengan nuansa batik yang elegan dan ramah lingkungan? Ingin tampil serasi dengan pasangan lewat batik couple warna alam? Atau mau tampil kompak satu geng dengan motif batik kembar yang eksklusif?
+					</p>
+					<p>
+						Batik Natra siap mewujudkan keinginanmu lewat layanan custom design!
+						Kami menggunakan bahan serat alami dan pewarna dari tumbuhan, menciptakan batik yang tak hanya indah tapi juga penuh makna dan peduli lingkungan.
+					</p>
+					<p>
+						Yuk, ekspresikan gaya dan kecintaanmu terhadap budaya Indonesia bersama Batik Natra!
+						Langsung hubungi admin kami untuk informasi dan pemesanan lebih lanjut.
 						</p>
 					<a href="https://api.whatsapp.com/send/?phone=628112671949" class="cart-btn btn-lg">Admin</a>
 				</div>
@@ -290,49 +297,50 @@
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="section-title">	
 						<h3><span class="orange-text">High</span> Light</h3>
-						<p>Tidak hanya sebagai warisan budaya, Tenun Ikat juga semakin mendunia dengan adanya kolaborasi dengan desaigner ternama!</p>
+						<p>Tidak hanya sebagai warisan budaya, <strong>Batik Warna Alam</strong> kini hadir dengan sentuhan modern yang elegan.<br>
+							Batik Natra mengangkat keindahan alami lewat pewarna dari tumbuhan dan serat alami yang ramah lingkungan.</p>
 					</div>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-lg-4 col-md-6">
+			<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
 					<div class="single-latest-news">
-						<div class="latest-news-bg news-bg-1"></div></a>
+						<div class="latest-news-bg news-bg-4"></div></a>
 						<div class="news-text-box">
-							<h3>Melestarikan Batik Demak Bersama Gallery Batik Natra</h3>
+							<h3><a href="https://betanews.id/2023/01/uniknya-batik-natra-kombinasikan-motif-khas-demak-dan-anatomi-tubuh.html">Uniknya Batik Natra, Kombinasikan Motif Khas Demak dan Anatomi Tubuh
+							FASHION</a></h3>
 							<p class="blog-meta">
-								<span class="author"><i class="fas fa-user"></i> Admin</span>
-								<span class="date"><i class="fas fa-calendar"></i>  September, 2022</span>
+								<span class="author"><i class="fas fa-user"></i> BETANEWS.ID</span>
+								<span class="date"><i class="fas fa-calendar"></i> Januari, 2023</span>
 							</p>
-							<p class="excerpt"><br>Ikut Berpartisipasi dalam Dhoho Fashion Street Pada Desember 2019 Bertempat di Hutan Kota Joyoboyo dengan tema 
-								“Pride of Jaya Baya”</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-latest-news">
-						<div class="latest-news-bg news-bg-2"></div></a>
-						<div class="news-text-box">
-							<h3>Mantan Marketing Obat Farmasi Banting Stir Menjadi Pengusaha Batik</a></h3>
-							<p class="blog-meta">
-								<span class="author"><i class="fas fa-user"></i> Admin</span>
-								<span class="date"><i class="fas fa-calendar"></i>  Oktober, 2020</span>
-							</p>
-							<p class="excerpt">The latest collection of Ammuzaki Fahim Collaboration with Tenun Mulya  for East Java Fashion Harmony  2023 at Candra Wilwatikta Park, Pasuruan.</p>
+							<p class="excerpt" style="text-align:justify">Motif batik khas Demak dipadukan dengan motif anatomi tubuh oleh rumah produksi di Jasmine Park, menghasilkan desain yang lebih modern dan menarik.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
 					<div class="single-latest-news">
-						<div class="latest-news-bg news-bg-3"></div></a>
+						<div class="latest-news-bg news-bg-5"></div></a>
 						<div class="news-text-box">
-							<h3><a href="single-news.html">Kisah Perajin Batik Tulis Bertahan di Tengah Pandemi</a></h3>
+							<h3><a href="https://www.rmoljawatengah.id/agak-lain-fesyen-demak-makin-kreatif">Agak Lain, Fesyen Demak Makin Kreatif</a></h3>
 							<p class="blog-meta">
-								<span class="author"><i class="fas fa-user"></i> Admin</span>
-								<span class="date"><i class="fas fa-calendar"></i> Maret, 2021</span>
+								<span class="author"><i class="fas fa-user"></i> RMOL NETWORK</span>
+								<span class="date"><i class="fas fa-calendar"></i> November, 2024</span>
 							</p>
-							<p class="excerpt">The latest collection of Ivan Gunawan Collaboration with Tenun Mulyafor East Java Fashion Harmony 2023 at Candra Wilwatikta Park, Pasuruan.</p>
+							<p class="excerpt" style="text-align:justify">Industri fesyen di Demak kian maju dan kreatif. Terbaru, para pengampu fesyen di Kota Wali berani tampil agak lain, dengan coba menonjolkan motif kolaborasi anatomi tubuh yang dipadu dengan seni batik kearifan lokal.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+					<div class="single-latest-news">
+						<div class="latest-news-bg news-bg-6"></div></a>
+						<div class="news-text-box">
+							<h3><a href="https://betanews.id/2023/01/salurkan-hobi-menggambarnya-yustika-kini-miliki-produksi-batik-natra-yang-peminatnya-hingga-mancanegara.html">Salurkan Hobi Menggambarnya, Yustika Kini Miliki Produksi Batik Natra yang Peminatnya Hingga Mancanegara</a></h3>
+							<p class="blog-meta">
+								<span class="author"><i class="fas fa-user"></i> BETANEWS.ID</span>
+								<span class="date"><i class="fas fa-calendar"></i> Januari, 2023</span>
+							</p>
+							<p class="excerpt" style="text-align:justify">Yustika Yuliarti menekuni batik untuk menyalurkan hobi menggambar sekaligus melestarikan budaya Indonesia.</p>
 						</div>
 					</div>
 				</div>

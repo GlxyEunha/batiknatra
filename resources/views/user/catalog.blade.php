@@ -18,12 +18,23 @@
 <!-- end breadcrumb section -->
 
 <!-- Product Filters -->
-<div class="product-filters">
-    <ul>
-        <li class="active">All</li>
-        <li>Batik Kain</li>
-        <li>Ready to Wear</li>
-        <li>Craft Batik</li>
+<div class="product-filters my-4 text-center">
+    <ul class="list-inline">
+        <li class="list-inline-item {{ request('category') == null ? 'active' : '' }}">
+            <a href="{{ route('user.catalog') }}" class="text-decoration-none" style="color: black;">All</a>
+        </li>
+        <li class="list-inline-item {{ request('category') == 'Batik Kain' ? 'active' : '' }}">
+            <a href="{{ route('user.catalog', ['category' => 'Batik Kain']) }}" class="text-decoration-none" style="color: black;">Batik Kain</a>
+        </li>
+        <li class="list-inline-item {{ request('category') == 'Ready to Wear' ? 'active' : '' }}">
+            <a href="{{ route('user.catalog', ['category' => 'Ready to Wear']) }}" class="text-decoration-none" style="color: black;">Ready to Wear</a>
+        </li>
+        <li class="list-inline-item {{ request('category') == 'Syall' ? 'active' : '' }}">
+            <a href="{{ route('user.catalog', ['category' => 'Syall']) }}" class="text-decoration-none" style="color: black;">Syall Batik</a>
+        </li>
+        <li class="list-inline-item {{ request('category') == 'Craft Batik' ? 'active' : '' }}">
+            <a href="{{ route('user.catalog', ['category' => 'Craft Batik']) }}" class="text-decoration-none" style="color: black;">Craft Batik</a>
+        </li>
     </ul>
 </div>
 
@@ -31,8 +42,7 @@
 <div class="container">
     <div class="row g-4">
         @foreach ($products as $product)
-            @if ($product->status == 'publish')
-                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <div class="col-6 col-sm-6 col-md-3 mb-4">
                     <a href="{{ route('user.catalog.product', $product->slug) }}" class="text-decoration-none text-dark">
                         <div class="product-card p-3 border rounded shadow-sm position-relative h-100">
                             <!-- Label NEW -->
@@ -40,7 +50,7 @@
                         
                             <!-- Gambar Produk dengan efek hover -->
                             <div class="img-hover-wrapper mb-3">
-                                <img src="{{ $product->image }}" alt="{{ $product->slug }}" class="img-fluid product-image-hover" style="max-height: 250px; object-fit: cover;">
+                                <img src="{{ asset('images/' . $product->image) }}" alt="{{ $product->slug }}" class="img-fluid product-image-hover d-block mx-auto" style="max-height: 250px; object-fit: cover;">
                             </div>
                         
                             <!-- Nama Produk -->
@@ -52,8 +62,10 @@
                         </div>
                     </a>
                 </div>
-            @endif
         @endforeach
+    </div>
+    <div class="d-flex justify-content-center mt-4">
+        {{ $products->appends(request()->query())->links('pagination::bootstrap-5') }}
     </div>
 </div>
 
